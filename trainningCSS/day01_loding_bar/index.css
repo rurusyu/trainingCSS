@@ -1,0 +1,32 @@
+.word{
+    height: 40px;
+    position: relative;
+    font-size: 40px;
+    z-index: 1;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  /* span없으면 바가 글씨위로옴. */
+  span{
+    position: relative;
+    z-index: 2;
+    font-family: ‘Playfair Display’, serif;
+  }
+  /* bar가 첨에 0%가 되야 마우스 떼면 되돌아옴 */
+  .bar{
+    z-index: 0;
+    width: 0%;
+    height: 50%;
+    position: absolute;
+    background-color: green;
+    top: 20px;
+    opacity: 0.5;
+  }
+  
+  .word:hover .bar{
+    opacity: 0.5;
+    width: 100%;
+    transition: width 0.3s ease-out;
+  }
+  
+  
