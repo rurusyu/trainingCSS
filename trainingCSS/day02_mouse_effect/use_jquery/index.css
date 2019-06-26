@@ -1,0 +1,39 @@
+ .dot{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    position: absolute;
+  }
+  
+  .text-wrap{
+    width: 500px;
+    height: 300px;
+    z-index: 2;
+  }
+  
+  .text-wrap.step-1{
+    font-weight: 300;
+  }
+  
+  .text-wrap.step-2{
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .text-wrap.step-3{
+    font-weight: 500;
+     font-size: 24px;
+  }
+  
+  .text-wrap.step-4{
+    font-weight: 600;
+    font-size: 32px;
+    left: 70%;
+    transition: left 0.3s ease;
+  }
+  
+  .text-wrap.step-5{
+    font-size: 40px;
+    left: 90%;
+    transition: left 0.3s ease;
+  }
